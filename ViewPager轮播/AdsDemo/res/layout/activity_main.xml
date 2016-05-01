@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MyMainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#2f6ab9"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip" />
+
+        <LinearLayout
+            android:id="@+id/llyt_welcome_dot"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|right"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:text="这里是你自己的内容"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+</LinearLayout>
